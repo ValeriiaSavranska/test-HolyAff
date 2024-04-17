@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html class="translated-ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -93,20 +94,18 @@
         window,
         document,
         "script",
-        "//connect.facebook.net/en_US/fbevents.js"
+        "https://connect.facebook.net/en_US/fbevents.js"
       );
       fbq("init", "{lander.param:fbpixel}");
       fbq("track", "PageView");
     </script>
     <noscript>
-      <img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id={lander.param:fbpixel}&ev=PageView&noscript=1"
+      <img height="1" width="1" style="display: none"
+      src=https://www.facebook.com/tr?id={lander.param:fbpixel}&ev=PageView&noscript=1"
       />
     </noscript>
     <!--End Facebook Pixel Code-->
+    <script defer="" src="./assets/js/custom.js"></script>
   </head>
 
   <body>
@@ -698,9 +697,15 @@
                     <p>
                       3. Seu iPhone11 Pro será enviado dentro de 5 a 7 dias.
                     </p>
-                    <a
+                    <!-- <a
                       href="http://{trackingdomain}/click/?origin={origin}&fbpixel={lander.param:fbpixel}"
                       onclick="fbq('track', 'InitiateCheckout');"
+                      id="p_modal_button3"
+                      class="btn btn-success btn-lg"
+                      style="background-color: #ed9220; border-color: #ed9220"
+                      >OK</a
+                    > -->
+                    <a
                       id="p_modal_button3"
                       class="btn btn-success btn-lg"
                       style="background-color: #ed9220; border-color: #ed9220"
@@ -747,13 +752,24 @@
                 ></p>
                 <div style="clear: both"></div>
               </div>
+              <div class="comments_form">
+                <textarea
+                  name="comments-text"
+                  class="form-control comments-textarea"
+                  id="comments-textarea"
+                  rows="3"
+                ></textarea>
+                <div class="survey_button" id="comments-btn">
+                  <font style="vertical-align: inherit">
+                    <font style="vertical-align: inherit">Publicar</font>
+                  </font>
+                </div>
+              </div>
               <div class="comments" id="comment0" style="display: block">
                 <div class="profile">
                   <video autoplay loop muted playsinline width="60">
                     <source src="./assets/images/1.webm" type="video/webm" />
-                    <!-- <source src="./assets/images/2.mpeg" type="video/mpeg" /> -->
                   </video>
-                  <!-- <img src="./assets/images/1.webm" /> -->
                 </div>
                 <div class="comment-content">
                   <p class="name">
@@ -954,7 +970,6 @@
                   <video autoplay loop muted playsinline width="60">
                     <source src="./assets/images/2.webm" type="video/webm" />
                   </video>
-                  <!-- <img src="./assets/images/2.mpeg" /> -->
                 </div>
                 <div class="comment-content">
                   <p class="name">
